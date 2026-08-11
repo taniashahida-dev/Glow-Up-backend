@@ -1,9 +1,12 @@
 import express from "express";
 import cors from "cors";
+import categoryRoutes from "./routes/category.routes";
 
 import authRoutes from "./routes/auth.routes";
 
+
 const app = express();
+app.use("/api/categories", categoryRoutes);
 
 app.use(
   cors({
