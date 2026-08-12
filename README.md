@@ -1189,7 +1189,7 @@ https://practice-prisma-and-postgresql.onrender.com
 
 ### GitHub Repository
 
-https://github.com/taniashahida-dev/Practice-prisma-and-PostgreSQL
+https://github.com/taniashahida-dev/Glow-Up-backend
 
 ---
 
