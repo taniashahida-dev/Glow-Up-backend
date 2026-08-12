@@ -1,12 +1,17 @@
 import { Router } from "express";
 import { bookingController } from "../modules/booking/booking.controller";
 import { authMiddleware } from "../middleware/auth.middleware";
+import { validateRequiredFields } from "../middleware/validation.middleware";
 
 const router = Router();
 
 router.post(
   "/",
   authMiddleware,
+  validateRequiredFields([
+    "serviceId",
+    "date",
+  ]),
   bookingController.createBooking
 );
 
