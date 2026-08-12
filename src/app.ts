@@ -6,6 +6,8 @@ import authRoutes from "./routes/auth.routes";
 import serviceRoutes from "./routes/service.routes";
 import bookingRoutes from "./routes/booking.routes";
 import reviewRoutes from "./routes/review.routes";
+import { errorMiddleware } from "./middleware/error.middleware";
+import { notFoundMiddleware } from "./middleware/not-found.middleware";
 
 
 const app = express();
@@ -13,6 +15,8 @@ app.use("/api/categories", categoryRoutes);
 app.use("/api/services", serviceRoutes);
 app.use("/api/bookings", bookingRoutes);
 app.use("/api/reviews", reviewRoutes);
+app.use(notFoundMiddleware);
+app.use(errorMiddleware);
 app.use(
   cors({
     origin: "*",
