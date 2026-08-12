@@ -5,12 +5,14 @@ import categoryRoutes from "./routes/category.routes";
 import authRoutes from "./routes/auth.routes";
 import serviceRoutes from "./routes/service.routes";
 import bookingRoutes from "./routes/booking.routes";
+import reviewRoutes from "./routes/review.routes";
 
 
 const app = express();
 app.use("/api/categories", categoryRoutes);
 app.use("/api/services", serviceRoutes);
 app.use("/api/bookings", bookingRoutes);
+app.use("/api/reviews", reviewRoutes);
 app.use(
   cors({
     origin: "*",
