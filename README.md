@@ -1003,13 +1003,13 @@ The `.env` file should remain in `.gitignore`.
 ## 1. Clone the Repository
 
 ```bash
-git clone https://github.com/taniashahida-dev/Practice-prisma-and-PostgreSQL.git
+git clone https://github.com/taniashahida-dev/Glow-Up-backend.git
 ```
 
 ## 2. Navigate to the Project
 
 ```bash
-cd Practice-prisma-and-PostgreSQL
+cd Glow-Up-backend 
 ```
 
 ## 3. Install Dependencies
